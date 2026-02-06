@@ -34,7 +34,7 @@ This project goes beyond a simple list, offering deep insights into combat stats
 - **Framework**: [Next.js 16 (App Router)](https://nextjs.org/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **State Management**: [Zustand](https://github.com/pmndrs/zustand)
-- **Data & API**: [Apollo Client](https://www.apollographql.com/) + GraphQL
+- **Data & API**: [Apollo Client](https://www.apollographql.com/) + [GraphQL Pokemon API](https://graphql-pokemon2.vercel.app/) ([Docs](https://wayfair.github.io/dociql/))
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **Testing**: Jest + React Testing Library
 
@@ -42,7 +42,7 @@ This project goes beyond a simple list, offering deep insights into combat stats
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/search-pokemon-fm-tech.git
+   git clone https://github.com/PrakasitJ/search-pokemon-fm-tech.git
    cd search-pokemon-fm-tech
    ```
 
