@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ PokéWiki - Advanced Pokedex & Team Builder
 
-## Getting Started
+A high-performance, Modern Pokedex application built with **Next.js 16** and **GraphQL**. 
 
-First, run the development server:
+This project goes beyond a simple list, offering deep insights into combat stats, type effectiveness, and evolution chains to help trainers build the perfect team.
+
+![Pokemon Wiki Banner](https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png)
+
+## 🚀 Features
+
+### 🔍 Advanced Search & Filtering
+- **Smart Autocomplete**: Instantly find Pokemon by name or specific attacks.
+- **Multi-Parameter Filtering**: Filter by Type, Weakness, Resistance, HP, CP, Height, Weight, and Evolution Stage.
+- **Responsive Design**: optimized for desktop and mobile trainers.
+
+### 📊 Detailed Analytics
+- **Combat Stats**: Visual bars for Max CP and Max HP relative to Gen 1 limits.
+- **Type Effectiveness Matrix**: 
+    - 🛡️ **Defensive**: See exactly what a Pokemon is resistant or weak to (2x / 0.5x).
+    - ⚔️ **Offensive**: View attack coverage.
+- **Smart Counters**: The app calculates the best counters considering both type advantages and weaknesses.
+
+### 🧬 Evolution Chains
+- Interactive evolution trees showing ancestors and direct descendants.
+- Navigation shortcuts between evolution stages.
+
+### 🎨 Modern UI/UX
+- **Dark Mode Support**: Automatically respects system preferences.
+- **Turbopack Powered**: Blazing fast local development speed.
+- **Server Side Rendering (SSR)**: Excellent SEO and initial load performance for individual Pokemon pages.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16 (App Router)](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
+- **Data & API**: [Apollo Client](https://www.apollographql.com/) + GraphQL
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Testing**: Jest + React Testing Library
+
+## 📦 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/search-pokemon-fm-tech.git
+   cd search-pokemon-fm-tech
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   pnpm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   pnpm dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser.
+
+## 🧪 Running Tests
+
+This project uses Jest for unit and integration testing.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Run all tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🤝 Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contributions, issues, and feature requests are welcome!
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
